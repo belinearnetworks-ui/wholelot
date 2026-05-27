@@ -1419,7 +1419,7 @@ function renderProducts(list) {
     grid.innerHTML = list.map(p => `
         <div class="product-card" data-id="${p.id}">
             <div class="prod-img-wrap">
-                <img class="prod-img" src="../assets/${p.image}" alt="${p.name}" loading="lazy"
+                <img class="prod-img" src="assets/${p.image}" alt="${p.name}" loading="lazy"
                      onerror="this.src='https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=400&q=60'">
                 ${p.badge ? `<span class="prod-badge">${p.badge}</span>` : ''}
                 <button class="prod-wishlist" data-id="${p.id}" title="Wishlist"><i class="far fa-heart"></i></button>
