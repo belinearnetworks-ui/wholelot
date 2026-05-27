@@ -1220,35 +1220,35 @@
     <div class="brand-grid">
         <a href="#" class="brand-tile">
             <div class="brand-icon" style="background:#1A2A1A;">
-                <img src="/assets/KoolNerds Logo.png" alt="Koolnerds Logo">
+                <img src="assets/KoolNerds Logo.png" alt="Koolnerds Logo">
             </div>
             <div class="brand-logo">Koolnerds</div>
             <div class="brand-sub">Streetwear</div>
         </a>
         <a href="#" class="brand-tile">
             <div class="brand-icon" style="background:#1A1A2A;">
-                <img src="/assets/snikha logo.png" alt="Snikha Logo">
+                <img src="assets/snikha logo.png" alt="Snikha Logo">
             </div>
             <div class="brand-logo">Snikha</div>
             <div class="brand-sub">Leave A Mark</div>
         </a>
         <a href="#" class="brand-tile">
             <div class="brand-icon" style="background:#2A1A1A;">
-                <img src="/assets/oneness logo.png" alt="">
+                <img src="assets/oneness logo.png" alt="">
             </div>
             <div class="brand-logo">Oneness</div>
             <div class="brand-sub">Denim & Basics</div>
         </a>
         <a href="#" class="brand-tile">
             <div class="brand-icon" style="background:#1A2A2A;">
-                <img src="/assets/SheWolf Logo.png" alt="She Wolf Logo">
+                <img src="assets/SheWolf Logo.png" alt="She Wolf Logo">
             </div>
             <div class="brand-logo">She Wolf</div>
             <div class="brand-sub">Activewear</div>
         </a>
         <a href="#" class="brand-tile">
             <div class="brand-icon" style="background:#2A2A1A;">
-                <img src="/assets/logo 2.jpg" alt="Lunatic Brain Logo">
+                <img src="assets/logo 2.jpg" alt="Lunatic Brain Logo">
             </div>
             <div class="brand-logo">Lunatic Brain</div>
             <div class="brand-sub">Premium</div>
@@ -1377,10 +1377,10 @@
         <button class="checkout-btn" id="checkoutBtn">Checkout</button>
     </div>
 </div>
-<img src="assets/03f87a5d-b7a7-4b8d-9517-3ceba701af85.png" alt="">
+
 <!-- TOAST -->
 <div class="toast" id="toast">✓ Added to bag</div>
-raw
+
 <script>
 // ── DATA ──
 
@@ -1460,7 +1460,7 @@ function openModal(id) {
     currentQty = 1;
     currentSize = 'S';
 
-    document.getElementById('modalImg').src = `../assets/${currentProduct.image}`;
+    document.getElementById('modalImg').src=`assets/${currentProduct.image}`;
     document.getElementById('modalImg').onerror = function() {
         this.src = 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=60';
     };
@@ -1560,7 +1560,7 @@ function renderCart() {
 
     drawerBody.innerHTML = cart.map((item, idx) => `
         <div class="cart-item">
-            <img class="cart-item-img" src="../assets/${item.image}" alt="${item.name}"
+            <img class="cart-item-img" src="assets/${item.image}" alt="${item.name}"
                  onerror="this.src='https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=200&q=50'">
             <div class="cart-item-info">
                 <div class="cart-item-name">${item.name}</div>
