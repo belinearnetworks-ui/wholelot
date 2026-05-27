@@ -1,0 +1,14 @@
+{
+  "name": "Lunatic Brain",
+  "short_name": "Lunatic Brain",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
